@@ -1,0 +1,101 @@
+{
+	"info": {
+		"name": "DigitalTwinApi",
+		"_postman_id": "1fb8cfe5-ffc3-3387-a135-e92b59919a15",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetDeviceTemperature",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8245/api/DeviceDigiTwin/cdf41edf-8b2c-47bc-bcfd-11554ae22344/getdevicetemperature/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8245",
+					"path": [
+						"api",
+						"DeviceDigiTwin",
+						"cdf41edf-8b2c-47bc-bcfd-11554ae22344",
+						"getdevicetemperature",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateDeviceInstance",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"objectSerialNumber\":\"cdf41edf-8b2c-47bc-bcfd-11554ae22344\",\n\t\"property1\" : \"temperature\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8245/api/DeviceDigiTwin/cdf41edf-8b2c-47bc-bcfd-11554ae22344/updatedeviceinstance/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8245",
+					"path": [
+						"api",
+						"DeviceDigiTwin",
+						"cdf41edf-8b2c-47bc-bcfd-11554ae22344",
+						"updatedeviceinstance",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateDeviceTemperature",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"temperature\":\"30\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8245/api/DeviceDigiTwin/cdf41edf-8b2c-47bc-bcfd-11554ae22344/updatedevicetemperature/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8245",
+					"path": [
+						"api",
+						"DeviceDigiTwin",
+						"cdf41edf-8b2c-47bc-bcfd-11554ae22344",
+						"updatedevicetemperature",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

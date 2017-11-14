@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/DigitalTwinApp" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="DigitalTwinApp.TelemetryReceiver_InstanceCount" Value="-1" />
+    <Parameter Name="DigitalTwinApp.TwinMgmtApi_InstanceCount" Value="-1" />
+  </Parameters>
+</Application>
